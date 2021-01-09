@@ -1,0 +1,44 @@
+.name-Project{
+    color: $primary;
+    font-size: 2rem;
+}
+
+.img-sm-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+@include media-breakpoint-up(lg) {
+    .btn-menu-responsive {
+        background-color: $primary;
+        color: white !important;
+        border-radius: 5px;
+    }
+}
+
+.img-carousel {
+    width: 500px;
+    height: 330px;
+}
+
+.img-saturacion{
+    -webkit-filter: invert(70%);
+    -webkit-filter: sepia(80%);
+    filter: invert(70%);
+    filter: sepia(70%);
+}
+
+.txt-footer{
+    text-align: right;
+}
+@include media-breakpoint-down(sm) {
+    .txt-footer{
+        text-align: center;
+    }
+}
+
+.nombreCanciones {
+    margin: 0;
+    line-height: 50px;
+}

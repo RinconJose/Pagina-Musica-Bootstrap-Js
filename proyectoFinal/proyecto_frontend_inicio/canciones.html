@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../scss/bootstrap.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="./inicio.html" class="navbar-brand font-weight-bold text-primary name-Project">
+                <img src="./imagenes/logo.png" class="img-fluid img-sm-icon navbar-brand mr-1" alt="">OYE
+            </a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#barraMenu"
+            aria-controls="barraMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barraMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="./inicio.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./canciones.html" class="nav-link active">Canciones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-2">
+                        <a href="#" type="button" class="nav-link btn-menu-responsive" data-toggle="modal" data-target="contacto" onclick="return abrir()">Contacto</a>
+                        <div class="modal" tabindex="-1" role="dialog" id="contacto">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">
+                                            Contacto
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>info@oye.com</p>
+                                        <a href="#">+1 123 123123123</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a href="./inicioSesion.html" class="nav-link btn-menu-responsive">Inicio de Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./registro.html" class="nav-link btn-menu-responsive">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid bg-light">
+            <div class="row">
+                <form action="" class="w-100">
+                    <div class="form-group col-10 col-md-7 m-auto p-3">
+                        <label for="buscarMusic"><h2>Canciones</h2></label>
+                        <input type="text" name="buscarMusic" id="buscarMusica" class="form-control" onkeyup="combinada()" placeholder="Buscar...">
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <div class="row" id="invento"></div>
+        </div>
+    </main>
+    <footer class="container-fluid py-2 bg-primary text-white">
+        <div class="row d-flex justify-content-between">
+            <div class="col text-left d-none d-sm-block">
+                <p class="my-2 w-75">Comparte la música</p>
+            </div>
+            <div class="col w-25">
+                <p class="my-2 txt-footer">@Derechos Reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/listacanciones.js"></script>
+    <!-- <script src="./js/barraBusqueda.js"></script> -->
+    <!-- <script src="./js/solicitudAjax.js"></script> -->
+    <script src="./js/ventanaModal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
